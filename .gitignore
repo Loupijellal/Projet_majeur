@@ -1,19 +1,21 @@
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-.venv/
-venv/
-env/
-
 .DS_Store
 .idea/
 .vscode/
+.claude/
 
-data/
+# données calculées (reconstruites par le notebook)
+data/*_hoppe.ply
+data/*_igr.ply
+data/*_checkpoint.pt
+data/*_loss.json
+data/synthetic_*
+data/*.png
+data/*.html
+
+# fichiers temporaires
 *.npy
-*.ply
-*.pt
-*.png
+
+# notebook exécuté (trop lourd)
+*_executed.ipynb
